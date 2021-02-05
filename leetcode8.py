@@ -1,3 +1,6 @@
+'''
+字符串转整数
+'''
 class Solution:
     def myAtoi(self, s):
         if len(s) == 0:

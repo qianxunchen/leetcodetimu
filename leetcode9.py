@@ -1,3 +1,6 @@
+'''
+回文数
+'''
 class Solution:
     def isPalindrome(self, x: int) -> bool:
         if -2**31 <= x < 0:
