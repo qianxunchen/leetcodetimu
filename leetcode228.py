@@ -12,7 +12,6 @@ class Solution:
 
         # 区间头节点
         start = nums[0]
-
         for i in range(lenght-1):
             if nums[i]+1 == nums[i+1]:
                 if nums[i+1] == nums[-1]:
