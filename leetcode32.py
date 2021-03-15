@@ -18,6 +18,7 @@ class Solution:
 
         return res
 
+
 code = Solution()
 print(code.longestValidParentheses("(()"))
 print(code.longestValidParentheses(")()())"))
