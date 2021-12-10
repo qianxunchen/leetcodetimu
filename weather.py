@@ -10,8 +10,8 @@ from tencentcloud.common.exception.tencent_cloud_sdk_exception import TencentClo
 
 
 def push_code(phone_number, data_list):
-    SecretId = 'AKID1rQijTw95j6C2cvykFTQ6VdT2KL4XjdG'
-    SecretKey = 'NUKuFK8futc4F9mOjnb8NL2SbT4ORDiw'
+    SecretId = 'you id'
+    SecretKey = 'you key'
     try:
         cred = credential.Credential(SecretId, SecretKey)
         httpProfile = HttpProfile()
@@ -24,9 +24,9 @@ def push_code(phone_number, data_list):
         req = models.SendSmsRequest()
         params = {
             "PhoneNumberSet": [phone_number],
-            "SmsSdkAppId": "1400607510",
-            "SignName": "植花集公众号",
-            "TemplateId": "1234898",
+            "SmsSdkAppId": "xxx",
+            "SignName": "xxx",
+            "TemplateId": "xxx",
             "TemplateParamSet": data_list
         }
         req.from_json_string(json.dumps(params))
